@@ -1,0 +1,23 @@
+camera: side
+metrics:
+  elbow_at_impact:
+    target: [130, 180]
+    weight: 0.8
+    finding: elbow_not_extended
+  knee_at_prep:
+    target: [120, 170]
+    weight: 0.6
+    finding: no_leg_drive
+  contact_height:
+    target: [0.01, 0.22]
+    weight: 0.8
+    finding: contact_too_low
+  wrist_peak_speed:
+    target: [0.4, 2.0]
+    weight: 1.2
+    finding: swing_too_fast
+    invert_high: true
+  chain_lag:
+    target: [0.4, 1.01]
+    weight: 0.5
+    finding: arm_only
